@@ -1,0 +1,72 @@
+# Initialize a new Git repository
+git init
+
+# Clone an existing repository
+git clone <repository_url>
+
+# Check the status of the repository
+git status
+
+# Add files to the staging area
+git add <file_name>        # Add a specific file
+git add .                  # Add all changes in the current directory
+
+# Commit changes to the repository
+git commit -m "Commit message"
+
+# View commit history
+git log
+
+# Push changes to a remote repository
+git push origin <branch_name>
+
+# Pull changes from a remote repository
+git pull origin <branch_name>
+
+# Create a new branch
+git branch <branch_name>
+
+# Switch to a different branch
+git checkout <branch_name>
+
+# Create and switch to a new branch
+git checkout -b <branch_name>
+
+# Merge a branch into the current branch
+git merge <branch_name>
+
+# Delete a branch locally
+git branch -d <branch_name>
+
+# Add a remote repository
+git remote add origin <repository_url>
+
+# View configured remotes
+git remote -v
+
+# Fetch changes from a remote repository
+git fetch origin
+
+# Stash changes temporarily
+git stash
+
+# Apply stashed changes
+git stash apply
+
+# Remove a file from the staging area
+git reset <file_name>
+
+# Undo the last commit (keep changes in the working directory)
+git reset --soft HEAD~1
+
+# Undo the last commit (discard changes)
+git reset --hard HEAD~1
+
+# Show changes between commits or the working directory
+git diff
+
+# Tag a specific commit
+git tag -a <tag_name> -m "Tag message"
+
+# Push tags to the remote repository
+git push origin --tags
